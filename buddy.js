@@ -3,7 +3,7 @@ const loadBuddies =() => {
     .then(res => res.json())
     .then(data => displayBuddies(data));
 }
-loadBuddies();
+// loadBuddies();
 const displayBuddies = data => {
     const buddies = data.results;
     const buddiesDiv = document.getElementById('buddies');
