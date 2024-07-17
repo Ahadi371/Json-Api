@@ -13,7 +13,7 @@ const countriesDiv =document.getElementById('countries');
 countries.forEach(country => {
 console.log(country)  
 const div = document.createElement('div');
-// div.classList.add('country')
+div.classList.add('country')
 const h3 = document.createElement('h3');
 h3.innerText =country.continents;
 
