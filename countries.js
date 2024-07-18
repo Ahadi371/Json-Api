@@ -11,13 +11,13 @@ const displayCountries = countries => {
 //   }
 const countriesDiv =document.getElementById('countries');    
 countries.forEach(country => {
-console.log(country)  
+// console.log(country)  
 const div = document.createElement('div');
 div.classList.add('country')
 div.innerHTML =`
 <h3>${country.continents}</h3>
 <p>${country.capital}</p>
-<button onclike="loadCountryByName">Details</button>`;
+<button onclick="loadCountryByName('${country.continents}')">Details</button>`;
 // const h3 = document.createElement('h3');
 // h3.innerText =country.continents;
 
@@ -27,4 +27,7 @@ div.innerHTML =`
 // div.appendChild(p);
 countriesDiv.appendChild(div); 
 });
+}
+const loadCountryByName = name => {
+    console.log(name);
 }
