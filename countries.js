@@ -29,5 +29,10 @@ countriesDiv.appendChild(div);
 });
 }
 const loadCountryByName = name => {
-    console.log(name);
+    const url = `https://restcountries.com/v3.1/name/${name}`
+    // console.log(url);
+    fetch(url)
+    .then(res => res.json())
+    .then(data => console.log(data));
 }
+loadCountryByName();
