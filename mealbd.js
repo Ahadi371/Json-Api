@@ -13,7 +13,7 @@ const displaySearchResult = meals =>{
     // console.log(meals);
     const searchResult = document.getElementById('search-result');
     meals.forEach(meal => {
-        console.log(meal);
+        // console.log(meal);
         const div =document.createElement('div');
         div.classList.add('col');
         div.innerHTML =`<div class="card h-100">
