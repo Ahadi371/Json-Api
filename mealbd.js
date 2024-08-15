@@ -35,5 +35,8 @@ const loadMealDetail = mealId => {
 // console.log(url);
 fetch(url)
 .then(res =>res.json())
-.then(data =>console.log(data.meals))
+.then(data => displayMealDetail(data.meals[0]))
 }
+const displayMealDetail = meal =>{
+    console.log(meal)
+    }
