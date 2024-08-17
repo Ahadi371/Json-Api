@@ -40,3 +40,4 @@ fetch(url)
 const displayMealDetail = meal =>{
     console.log(meal)
     }
+    
